@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 .menu {
   background: #191a22;
-	color: #FFF;
-	padding: 0.6rem 1.25rem;
-  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  font-family: "Roboto", sans-serif;
 }
 
-.leftNav, 
+.leftNav,
 .rightNav {
   display: inline-block;
 }
@@ -22,16 +22,17 @@
   width: auto;
   padding-left: 30px;
   vertical-align: middle;
-  font-weight:bold;
+  font-weight: bold;
   background-image: url("https://www.iconsdb.com/icons/preview/white/phone-68-xxl.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;
 }
 
-.menu ul, .menu li {
+.menu ul,
+.menu li {
   margin: 0 auto;
-	list-style: none
+  list-style: none;
 }
 
 .logo-image:hover {
@@ -39,16 +40,16 @@
 }
 
 .menu li {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .menu a {
-	display: block;
-	padding: 1rem;
-	text-decoration: none;
-	color: #fff;
-	font-size: 1.1rem;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 .menu li a::after {
@@ -59,29 +60,29 @@
   height: 3px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #dcad69;
   transition: width 0.5s ease 0s, left 0.5s ease 0s;
   width: 0;
 }
 
 .menu li a:hover::after {
-  width: 100%; 
-  left: 0; 
+  width: 100%;
+  left: 0;
 }
 
-.menu ul .sub-menus{
+.menu ul .sub-menus {
   height: auto;
-	overflow: hidden;
+  overflow: hidden;
   width: 170px;
-	background: #191a22;
-	position: absolute;
-	z-index: 99;
-	display: none;
+  background: #191a22;
+  position: absolute;
+  z-index: 99;
+  display: none;
 }
 
 .menu ul.sub-menus li {
   display: block;
-	width: 100%;
+  width: 100%;
 }
 
 .arrow {
@@ -91,56 +92,62 @@
 }
 
 .menu ul.sub-menus a {
-  color: #FFFFFF;
-	font-size: 0.9rem;
+  color: #ffffff;
+  font-size: 0.9rem;
 }
 
 .menu li:hover ul.sub-menus {
-  display: block
+  display: block;
 }
 
-.menu ul.sub-menus a:hover{
-	background: #191A22;
-	color: #FFFFFF;
+.menu ul.sub-menus a:hover {
+  background: #191a22;
+  color: #ffffff;
   transition: 0.5s ease;
 }
 
-.mobile:hover{ 
+.mobile:hover {
   /* color: #f79f52; */
   animation: pulse 1s infinite;
-  animation-timing-function: linear;   
+  animation-timing-function: linear;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1);}
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-@media screen and (max-width: 800px){
-	.menu {
-    position:relative
+@media screen and (max-width: 800px) {
+  .menu {
+    position: relative;
   }
-	.menu ul {
-    background:.111;
-    position:absolute;
-    top:100%;
-    right:0;
-    left:0;
-    z-index:3;
-    height:auto;
-    display:none
+  .menu ul {
+    background: 0.111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
   }
-	.menu ul.sub-menus {
-    width:100%;
-    position:static;
+  .menu ul.sub-menus {
+    width: 100%;
+    position: static;
   }
-	.menu ul.sub-menus a {
-    padding-left:30px;
+  .menu ul.sub-menus a {
+    padding-left: 30px;
   }
-	.menu li {
-    display:block;
-    float:none;
-    width:auto;
+  .menu li {
+    display: block;
+    float: none;
+    width: auto;
   }
 }
