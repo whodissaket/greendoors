@@ -60,7 +60,7 @@
   height: 3px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #dcad69;
   transition: width 0.5s ease 0s, left 0.5s ease 0s;
   width: 0;
 }
