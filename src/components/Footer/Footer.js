@@ -13,7 +13,8 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+
 import classes from "./Footer.module.css";
 
 const Footer = () => {
@@ -112,22 +113,13 @@ const Footer = () => {
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="#" target="_blank" aria-label="Facebook">
-                <FontAwesomeIcon
-                  className={classes.footer__social__fb}
-                  icon={["fab", "facebook"]}
-                />
+                <FaFacebook className={classes.footer__social__fb} />
               </SocialIconLink>
               <SocialIconLink href="#" target="_blank" aria-label="Instagram">
-                <FontAwesomeIcon
-                  className={classes.footer__social__insta}
-                  icon={["fab", "instagram"]}
-                />
+                <FaInstagram className={classes.footer__social__insta} />
               </SocialIconLink>
               <SocialIconLink href="#" target="_blank" aria-label="Twitter">
-                <FontAwesomeIcon
-                  className={classes.footer__social__twitter}
-                  icon={["fab", "twitter"]}
-                />
+                <FaTwitter className={classes.footer__social__twitter} />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
