@@ -14,6 +14,7 @@ import {
   SocialIconLink,
 } from "./FooterElements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -107,18 +108,26 @@ const Footer = () => {
               Greendoors
             </SocialLogo>
             <WebsiteRights>
-              Greendoors &copy; {new Date().getFullYear()}.
-              All Rights Reserved.
+              Greendoors &copy; {new Date().getFullYear()}. All Rights Reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="#" target="_blank" aria-label="Facebook">
-                <FontAwesomeIcon icon={["fab", "facebook"]} />
+                <FontAwesomeIcon
+                  className={classes.footer__social__fb}
+                  icon={["fab", "facebook"]}
+                />
               </SocialIconLink>
               <SocialIconLink href="#" target="_blank" aria-label="Instagram">
-                <FontAwesomeIcon icon={["fab", "instagram"]} />
+                <FontAwesomeIcon
+                  className={classes.footer__social__insta}
+                  icon={["fab", "instagram"]}
+                />
               </SocialIconLink>
               <SocialIconLink href="#" target="_blank" aria-label="Twitter">
-                <FontAwesomeIcon icon={["fab", "twitter"]} />
+                <FontAwesomeIcon
+                  className={classes.footer__social__twitter}
+                  icon={["fab", "twitter"]}
+                />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

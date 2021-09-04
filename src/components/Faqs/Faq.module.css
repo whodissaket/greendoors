@@ -1,0 +1,14 @@
+.mainpage {
+  align-items: center;
+
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+
+  color: rgb(211, 211, 211);
+}
+
+.mainpage__content {
+  position: relative;
+  background-color: #8e92a0;
+}
