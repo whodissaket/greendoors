@@ -79,9 +79,7 @@ const Footer = () => {
               <FooterLink as="a" href="#">
                 Services
               </FooterLink>
-              <FooterLink as="a" href="#">
-                Gallery
-              </FooterLink>
+              <FooterLink to="/gallery">Gallery</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Socials</FooterLinkTitle>

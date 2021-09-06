@@ -1,6 +1,6 @@
 /*eslint-disable */
 import classes from "./Navbar.module.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function updatemenu() {
   if (document.getElementById("responsive-menu").checked == true) {
