@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -7,6 +7,7 @@ import Mainpage from "./components/Landing/Mainpage";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Faq from "./components/Faqs/Faq";
 import Gallery from "./components/Gallery/Gallery";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 function App() {
   return (
@@ -19,17 +20,17 @@ function App() {
             <Mainpage />
             <ContactUs />
             <Faq />
-            <Footer/>
+            <Footer />
           </Route>
           <Route path="/gallery">
-            <Gallery />
+            <SimpleReactLightbox>
+              <Gallery />
+            </SimpleReactLightbox>
           </Route>
 
           {/* Navbar Routing ends */}
         </Switch>
       </Router>
-
-      
     </div>
   );
 }

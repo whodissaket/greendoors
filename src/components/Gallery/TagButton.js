@@ -1,9 +1,13 @@
 import { Categories } from "./GalleryElements";
+import "./TagButton.css";
 
-const TagButton = ({ name, handleSetTag }) => {
+const TagButton = ({ name, handleSetTag, tagActive }) => {
   return (
-    <Categories onClick={() => handleSetTag(name)}>
-      {name.toUpperCase()}
+    <Categories
+      className={`${tagActive ? "active" : null}`}
+      onClick={() => handleSetTag(name)}
+    >
+      {name}
     </Categories>
   );
 };

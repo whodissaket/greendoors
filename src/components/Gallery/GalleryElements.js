@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const CategoryContainer = styled.div`
   text-align: center;
+  border-radius: 20px;
   padding: 20px 0;
   background-color: #ffea;
 `;
 
 export const Categories = styled.button`
   outline: none;
-  border: 1px solid;
-  border-radius: 3px;
+  border: none;
   color: black;
   padding: 5;
   margin: 0 5px;
@@ -18,6 +18,7 @@ export const Categories = styled.button`
 `;
 
 export const GalleryContainer = styled.div`
+  padding-top: 4fr;
   width: 80%;
   margin: auto;
   display: grid;
@@ -34,7 +35,8 @@ export const GalleryContainer = styled.div`
 `;
 
 export const ImageCard = styled.div`
-  padding: 5px;
+  margin: 10px auto;
+  padding-top: 5px;
   border: 1px solid #ccc;
   border-radius: 2px;
 

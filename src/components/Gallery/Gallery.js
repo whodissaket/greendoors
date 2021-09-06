@@ -6,6 +6,7 @@ import {
   ImageCard,
   CategoryContainer,
 } from "./GalleryElements";
+import { SRLWrapper } from "simple-react-lightbox";
 
 const images = [
   { id: "1", ImageName: "int_1.jpg", tag: "Interior Paint" },
@@ -26,12 +27,18 @@ const images = [
   { id: "16", ImageName: "oth_4.jpg", tag: "Others" },
 ];
 
+const options = {
+  caption: {
+    showCaption: false,
+  },
+};
+
 const Gallery = () => {
-  const [tag, setTag] = useState("all");
+  const [tag, setTag] = useState("All");
   const [filteredImages, setFilteredImages] = useState([]);
 
   useEffect(() => {
-    tag === "all"
+    tag === "All"
       ? // displays all images
         setFilteredImages(images)
       : // displays images with tag
@@ -41,19 +48,43 @@ const Gallery = () => {
   return (
     <div to="/gallery">
       <CategoryContainer>
-        <TagButton name="all" handleSetTag={setTag} />
-        <TagButton name="Interior Paint" handleSetTag={setTag} />
-        <TagButton name="Exterior Paint" handleSetTag={setTag} />
-        <TagButton name="Kitchen" handleSetTag={setTag} />
-        <TagButton name="Others" handleSetTag={setTag} />
+        <TagButton
+          name="All"
+          handleSetTag={setTag}
+          tagActive={tag === "All" ? true : false}
+        />
+        <TagButton
+          name="Interior Paint"
+          handleSetTag={setTag}
+          tagActive={tag === "Interior Paint" ? true : false}
+        />
+        <TagButton
+          name="Exterior Paint"
+          handleSetTag={setTag}
+          tagActive={tag === "Exterior Paint" ? true : false}
+        />
+        <TagButton
+          name="Kitchen"
+          handleSetTag={setTag}
+          tagActive={tag === "Kitchen" ? true : false}
+        />
+        <TagButton
+          name="Others"
+          handleSetTag={setTag}
+          tagActive={tag === "Others" ? true : false}
+        />
       </CategoryContainer>
-      <GalleryContainer>
-        {filteredImages.map((image) => (
-          <ImageCard key={image.id}>
-            <Image src={`/assets/${image.ImageName}`} alt={image.ImageName} />
-          </ImageCard>
-        ))}
-      </GalleryContainer>
+      <SRLWrapper options={options}>
+        <GalleryContainer>
+          {filteredImages.map((image) => (
+            <ImageCard key={image.id}>
+              <a href={`/assets/${image.ImageName} `} alt="">
+                <Image src={`/assets/${image.ImageName}`} alt="" />
+              </a>
+            </ImageCard>
+          ))}
+        </GalleryContainer>
+      </SRLWrapper>
     </div>
   );
 };
