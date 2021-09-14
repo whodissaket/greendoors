@@ -1,0 +1,4 @@
+.imageCarousel {
+  display: flex;
+  justify-content: end;
+}
