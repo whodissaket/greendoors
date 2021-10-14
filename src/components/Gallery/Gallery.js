@@ -9,22 +9,27 @@ import {
 import { SRLWrapper } from "simple-react-lightbox";
 
 const images = [
-  { id: "1", ImageName: "int_1.jpg", tag: "Interior Paint" },
-  { id: "2", ImageName: "int_2.jpg", tag: "Interior Paint" },
-  { id: "3", ImageName: "int_3.jpg", tag: "Interior Paint" },
-  { id: "4", ImageName: "int_4.jpg", tag: "Interior Paint" },
-  { id: "5", ImageName: "ext_1.jpg", tag: "Exterior Paint" },
-  { id: "6", ImageName: "ext_2.jpg", tag: "Exterior Paint" },
-  { id: "7", ImageName: "ext_3.jpg", tag: "Exterior Paint" },
-  { id: "8", ImageName: "ext_4.jpg", tag: "Exterior Paint" },
-  { id: "9", ImageName: "kit_1.jpg", tag: "Kitchen" },
-  { id: "10", ImageName: "kit_2.jpg", tag: "Kitchen" },
-  { id: "11", ImageName: "kit_3.jpg", tag: "Kitchen" },
-  { id: "12", ImageName: "kit_4.jpg", tag: "Kitchen" },
-  { id: "13", ImageName: "oth_1.jpg", tag: "Others" },
-  { id: "14", ImageName: "oth_2.jpg", tag: "Others" },
-  { id: "15", ImageName: "oth_3.jpg", tag: "Others" },
-  { id: "16", ImageName: "oth_4.jpg", tag: "Others" },
+  { id: "1", ImageName: "int_1.jpeg", tag: "Interior Paint" },
+  { id: "2", ImageName: "int_2.jpeg", tag: "Interior Paint" },
+  { id: "3", ImageName: "int_3.jpeg", tag: "Interior Paint" },
+  { id: "4", ImageName: "int_4.jpeg", tag: "Interior Paint" },
+  { id: "5", ImageName: "int_5.jpeg", tag: "Interior Paint" },
+  { id: "6", ImageName: "int_6.jpeg", tag: "Interior Paint" },
+
+  { id: "7", ImageName: "ext_1.jpeg", tag: "Exterior Paint" },
+
+  { id: "8", ImageName: "ext_2.jpeg", tag: "Exterior Paint" },
+  { id: "9", ImageName: "ext_3.jpeg", tag: "Exterior Paint" },
+  { id: "10", ImageName: "ext_4.jpeg", tag: "Exterior Paint" },
+  { id: "11", ImageName: "kit_1.jpeg", tag: "Kitchen" },
+  { id: "12", ImageName: "kit_2.jpeg", tag: "Kitchen" },
+  { id: "13", ImageName: "kit_3.jpeg", tag: "Kitchen" },
+  { id: "14", ImageName: "kit_4.jpeg", tag: "Kitchen" },
+  { id: "15", ImageName: "oth_1.jpeg", tag: "Others" },
+  { id: "16", ImageName: "oth_2.jpeg", tag: "Others" },
+  { id: "17", ImageName: "oth_3.jpeg", tag: "Others" },
+  { id: "18", ImageName: "oth_4.jpeg", tag: "Others" },
+  { id: "19", ImageName: "oth_5.jpeg", tag: "Others" },
 ];
 
 const options = {

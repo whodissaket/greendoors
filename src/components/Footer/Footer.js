@@ -89,15 +89,7 @@ const Footer = () => {
               <FooterLink as="a" href="#">
                 Instagram
               </FooterLink>
-              <FooterLink as="a" href="#">
-                Twitter
-              </FooterLink>
-              <FooterLink as="a" href="#">
-                Pinterest
-              </FooterLink>
-              <FooterLink as="a" href="#">
-                YouTube
-              </FooterLink>
+
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
