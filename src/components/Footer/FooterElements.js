@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #fef9ef;
+  background-color: #f2f2f2;
 `;
 
 export const FooterWrap = styled.div`

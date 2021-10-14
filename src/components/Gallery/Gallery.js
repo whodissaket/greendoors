@@ -30,6 +30,7 @@ const images = [
   { id: "17", ImageName: "oth_3.jpeg", tag: "Others" },
   { id: "18", ImageName: "oth_4.jpeg", tag: "Others" },
   { id: "19", ImageName: "oth_5.jpeg", tag: "Others" },
+  { id: "20", ImageName: "kit_5.jpeg", tag: "Kitchen" },
 ];
 
 const options = {

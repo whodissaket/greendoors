@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 .contact {
-  background-color: #fef9ef;
+  background-color: #f2f2f2;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
+
   padding: 2rem 1rem;
   display: flex;
   height: 70%;
 }
 .reviews {
   display: inline-block;
+
   width: 60%;
   height: 20%;
   margin-right: 5%;
@@ -29,6 +31,8 @@
 }
 .review1 {
   background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   padding: 1rem;
   border-radius: 10px;
 }
@@ -50,7 +54,7 @@ h1 {
   height: 85%;
   font-size: 1rem;
   padding: 2.5rem;
-  background: #0f044c;
+  background: #f8485e;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
 }
@@ -58,19 +62,21 @@ h1 {
   margin-top: 50px;
 }
 .fas {
-  color: #ffffff;
+  color: black;
   position: absolute;
 }
 input {
   width: 90%;
+  margin-left: 5%;
   margin-bottom: 1.6rem;
+  border-radius: 10px;
   padding: 0px 1.9rem 1rem;
   font-size: 1rem;
   border: none;
-  border-bottom: 1px solid #555;
+
   outline: none;
-  background-color: #0f044c;
-  color: #fff;
+
+  color: black;
 }
 input:focus {
   border-bottom: 1px solid #eeeeee;
