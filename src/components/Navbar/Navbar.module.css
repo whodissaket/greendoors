@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+.container {
+  position: relative;
+}
+
 .menu {
-  background-image: linear-gradient(to right, #000000, #080808, #101010, #151515, #1a1a1a);
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #080808,
+    #101010,
+    #151515,
+    #1a1a1a
+  );
   color: #fff;
   padding: 0.6rem 1.25rem;
   font-family: "Roboto", sans-serif;
@@ -128,6 +139,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* .navcontainer {
+    display: fix;
+  }
   .menu {
     position: relative;
   }
@@ -152,5 +166,5 @@
     display: block;
     float: none;
     width: auto;
-  }
+  } */
 }

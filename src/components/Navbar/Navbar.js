@@ -15,6 +15,7 @@ const Navbar = () => {
 
 
   return (
+
     <nav className={classes.menu}>
       <ul className={classes.leftNav}>
         {/* <li><a href="/"><img className={classes["logo-image"]} src="https://aapkapainter.com/assets/newdesign/images/logo/logo.png" alt="logo" /></a></li> */}
@@ -78,6 +79,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+
   );
 };
 export default Navbar;

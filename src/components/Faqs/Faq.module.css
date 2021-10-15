@@ -1,5 +1,5 @@
 .container {
-  background: url(../images/Faq1.jpg);
+  background: #fff;
   background-size: cover;
   background-position: cover;
   box-sizing: border-box;
@@ -8,11 +8,10 @@
   /*background-color: #6d6875;*/
 }
 
-
 h1 {
   text-align: center;
   margin: 2rem 0 2rem 0;
-  color: #f9fafa;
+  color: #191a22;
   animation: glowing 20s linear infinite;
   font-size: 2rem;
 }
@@ -20,7 +19,6 @@ h1 {
 .accordion {
   max-width: 800px;
   margin: 2rem auto;
-  
 }
 
 .accordiontitle {
@@ -28,12 +26,11 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  background-color:#5e6161;
+  background-color: #5e6161;
   color: white;
   font-size: 1.2rem;
-  border: 3px solid ;
+  border: 3px solid;
   border-color: rgb(247, 243, 243);
-  
 }
 
 .accordiontitle:hover {
@@ -44,7 +41,6 @@ h1 {
 .accordioncontent {
   padding: 1rem;
   border-radius: 10px;
- 
 }
 
 .accordioncontent {
@@ -52,4 +48,3 @@ h1 {
   border-left: 5px solid rgb(235, 108, 108);
   transition: 2s;
 }
-
