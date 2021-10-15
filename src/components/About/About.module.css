@@ -1,0 +1,220 @@
+.title {
+  font-size: 24px;
+  margin: 20px auto;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.underline {
+  height: 3px;
+  width: 100px;
+  display: block;
+  margin: auto;
+  background-color: #dcad69;
+}
+
+.mason {
+  display: flex;
+  flex-direction: row;
+  background: hsla(333, 100%, 53%, 1);
+  background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0F7B", endColorstr="#F89B29", GradientType=1);
+}
+
+.masonImage>img {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+.masonDescription {
+  width: 80%;
+  margin: 20px 40px;
+  display: block;
+}
+
+.masonDescription>h2 {
+  font-size: 36px;
+  line-height: 3.5rem;
+  font-weight: 600;
+}
+
+.masonDescription>p {
+  font-size: 20px;
+  margin: 10px auto;
+  display: block;
+  line-height: 1.7rem;
+  color: #333;
+}
+
+.serviceBtn {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  transition: 0.5s ease;
+}
+
+.serviceBtn>a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.serviceBtn:hover, .serviceBtn:focus {
+  box-shadow: inset -6em 0 0 0 #b6b6b6, inset 6em 0 0 0 #b6b6b6;
+  color: white;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+.aboutSectionCarousel {
+  width: 90%;
+  margin: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutSectionCarouselTexts>h3 {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.aboutSectionCarouselTexts>p {
+  font-size: 20px;
+  margin: 10px 0 20px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.aboutBtn {
+  width: 30%;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em 0.5em 0.5em 0;
+  padding: 1em 2em;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.aboutBtn>a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.aboutBtn:hover {
+  background-color: #d4d1d1;
+}
+
+.aboutSectionImage {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.aboutSectionImage>img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 450px;
+  width: 450px;
+}
+
+@media screen and (max-width:1100px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutSectionCarouselTexts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mason {
+    display: flex;
+    flex-direction: row;
+  }
+  .masonImage>img {
+    width: 400px;
+    height: 450px;
+    margin-top: 40px;
+  }
+  .masonDescription {
+    width: 100%;
+    margin: 20px 10px;
+  }
+  .masonDescription>h2 {
+    font-size: 26px;
+    list-style: none;
+    line-height: 2rem;
+  }
+  .masonDescription>p {
+    font-size: 16px;
+    line-height: 1.3rem;
+  }
+  .aboutSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .mason {
+    display: flex;
+    flex-direction: column;
+  }
+  .masonImage {
+    display: flex;
+    justify-content: center;
+  }
+  .masonImage>img {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+  }
+  .masonDescription {
+    width: 95%;
+    margin: 0 10px 20px;
+  }
+  .masonDescription>h2 {
+    font-size: 26px;
+  }
+  .masonDescription>p {
+    font: 16px;
+  }
+  .aboutSectionImage>img {
+    width: 350px;
+    height: 350px;
+  }
+  .aboutSectionCarousel {
+    margin: 10px auto;
+  }
+  .aboutSectionCarouselTexts>h3 {
+    font-size: 26px;
+  }
+  .aboutSectionCarouselTexts>p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .aboutBtn {
+    width: 40%;
+  }
+}

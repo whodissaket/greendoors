@@ -11,12 +11,18 @@ import {
 
 const ContactUs = () => {
   return (
-    <div>
-      <div className={classes.contact}>
-        <div className={classes.reviews}>
-          <div className={classes.review1}>
-            <div className={classes["photo-section"]}>
-              <img src="" alt="user1" />
+
+    <div className={classes.contact}>
+      <div className={classes.reviews}>
+        <div className={classes.review1}>
+          <div className={classes["photo-section"]}>
+            <img className={classes["user-image"]} src={process.env.PUBLIC_URL + "/assets/user.png"} alt="user1" />
+          </div>
+          <div className={classes["name-section"]}>
+            <h2>Lorem Ipsum</h2>
+            <div className={classes.star}>
+              <FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStarHalfAlt></FaStarHalfAlt>
+
             </div>
             <div className={classes["name-section"]}>
               <h2>Lorem Ipsum</h2>
@@ -36,6 +42,9 @@ const ContactUs = () => {
               laborum suscipit ullam labore mollitia!
             </p>
           </div>
+
+          <div className={classes["submit-btn"]}>
+            <button className={classes.btn}><FaCheckCircle style={{ "margin": "0 10px" }}></FaCheckCircle> Book Now</button>
         </div>
         <div className={classes.contactForm}>
           <div className={classes.box}>

@@ -29,7 +29,7 @@ const MiniCarousel = () => {
     <div>
       <Carousel
         autoPlay={true}
-        width={'23%'}
+        width={'25%'}
         showThumbs={false}
         interval={2000}
         infiniteLoop={true}
@@ -37,6 +37,22 @@ const MiniCarousel = () => {
         showIndicators={false}
         showStatus={false}
         className={classes.imageCarousel}>
+        {miniImages.map((image) => (
+          <a href={`/assets/${image.ImageName} `} alt="">
+            <img className={classes.photo} key={image.id} src={`/assets/${image.ImageName} `} alt="" />
+          </a>
+        ))}
+      </Carousel>
+      <Carousel
+        autoPlay={true}
+        width={'40%'}
+        showThumbs={false}
+        interval={2000}
+        infiniteLoop={true}
+        showArrows={true}
+        showIndicators={false}
+        showStatus={false}
+        className={classes.imageCarouselSecondary}>
         {miniImages.map((image) => (
           <a href={`/assets/${image.ImageName} `} alt="">
             <img className={classes.photo} key={image.id} src={`/assets/${image.ImageName} `} alt="" />

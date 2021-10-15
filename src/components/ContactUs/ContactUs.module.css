@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 .contact {
+
   background-color: #f2f2f2;
+
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -10,6 +12,26 @@
   display: flex;
   height: 70%;
 }
+@media screen and (min-width : 768px) and (max-width : 900px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width : 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews {
+    width: 100%;
+  }
+}
+
+
+
 .reviews {
   display: inline-block;
 
@@ -18,18 +40,30 @@
   margin-right: 5%;
   padding: 5rem;
   display: flex;
+  flex-direction: row;
 }
 .name-section {
   display: inline-block;
 }
 .photo-section {
   display: inline-block;
+  margin: 0 5%;
+}
+.user-image {
+  display: flex;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-left: 5%;
+  width: 80px;
+  height: 80px;
 }
 .review1 {
+
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -54,7 +88,11 @@ h1 {
   height: 85%;
   font-size: 1rem;
   padding: 2.5rem;
-  background: #f8485e;
+
+  background: #191a22;  
+
+
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
 }
@@ -76,8 +114,9 @@ input {
 
   outline: none;
 
-  color: black;
-}
+  background-color: #191a22;
+  color: #fff;
+
 input:focus {
   border-bottom: 1px solid #eeeeee;
 }
@@ -94,7 +133,7 @@ input:focus {
   display: block;
   width: 60%;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   outline: none;
   color: #fff;
   background-image: linear-gradient(
