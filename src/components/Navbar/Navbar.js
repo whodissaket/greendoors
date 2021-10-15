@@ -12,6 +12,8 @@ function updatemenu() {
 }
 
 const Navbar = () => {
+
+
   return (
     <nav className={classes.menu}>
       <ul className={classes.leftNav}>
@@ -22,21 +24,21 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a className={classes["dropdown-arrows"]} href="#">
+          <a className={classes["dropdown-arrows"]} style={{ cursor: "pointer" }}>
             Services <span className={classes.arrow}>&#8595;</span>
           </a>
           <ul className={classes["sub-menus"]}>
             <li>
-              <a href="#">Price Quote</a>
+              <a href="/paintquotation" to="/paintquotation">Paint Quotation</a>
             </li>
             <li>
-              <a href="#">Interior Paintaing</a>
+              <a href="/interiorpainting" to="/interiorpainting">Interior Paintaing</a>
             </li>
             <li>
-              <a href="#">Exterior Paintaing</a>
+              <a href="/exteriorpainting" to="/exteriorpainting">Exterior Paintaing</a>
             </li>
             <li>
-              <a href="#">Waterproofing</a>
+              <a href="/waterproofing" to="/waterproofing">Waterproofing</a>
             </li>
           </ul>
         </li>
