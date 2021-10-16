@@ -1,33 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
 .container {
   position: relative;
 }
 
 .menu {
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #080808,
-    #101010,
-    #151515,
-    #1a1a1a
-  );
+  background-image: linear-gradient( to right, #000000, #080808, #101010, #151515, #1a1a1a);
   color: #fff;
   padding: 0.6rem 1.25rem;
   font-family: "Roboto", sans-serif;
   position: sticky;
   top: 0;
   z-index: 99;
+  display: flex;
+  flex-direction: row;
 }
 
-.leftNav,
-.rightNav {
-  display: inline-block;
+.leftNav {
+  display: flex;
+  justify-content: start;
 }
 
 .rightNav {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icon {
@@ -43,8 +38,7 @@
   background-position: center left;
 }
 
-.menu ul,
-.menu li {
+.menu ul, .menu li {
   margin: 0 auto;
   list-style: none;
 }
@@ -54,8 +48,8 @@
 }
 
 .menu li {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .menu a {
@@ -138,33 +132,28 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  /* .navcontainer {
-    display: fix;
-  }
+@media screen and (max-width:830px) {
   .menu {
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
-  .menu ul {
-    background: 0.111;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: 3;
-    height: auto;
-    display: none;
+  .leftNav, .rightNav {
+    justify-content: center;
   }
-  .menu ul.sub-menus {
-    width: 100%;
-    position: static;
+}
+
+@media screen and (max-width:600px) {
+  .menu li a {
+    font-size: 16px;
+    padding: 14px;
   }
-  .menu ul.sub-menus a {
-    padding-left: 30px;
+}
+
+@media screen and (max-width:540px) {
+  .menu li a {
+    font-size: 14px;
   }
-  .menu li {
-    display: block;
-    float: none;
-    width: auto;
-  } */
+  .arrow {
+    margin: 0;
+  }
 }

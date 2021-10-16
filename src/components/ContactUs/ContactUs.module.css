@@ -10,12 +10,14 @@
 }
 
 .reviews {
-  display: inline-block;
-  width: 60%;
+  width: 50%;
   height: 20%;
-  padding: 5rem;
+  padding: 20px;
+  margin-top: 50px;
+  margin-right: 150px;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .name-section {
@@ -37,19 +39,6 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-}
-
-.review1 {
-  background: rgba( 255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-  backdrop-filter: blur( 6.5px);
-  -webkit-backdrop-filter: blur( 6.5px);
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18);
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1rem;
-  border-radius: 10px;
 }
 
 .star {
@@ -182,6 +171,21 @@ input:focus {
   }
 }
 
+@media screen and (min-width:900px) and (max-width:1100px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .box {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .contact {
     display: flex;
@@ -198,6 +202,7 @@ input:focus {
   }
   .reviews {
     width: 80%;
+    margin: auto;
   }
 }
 
