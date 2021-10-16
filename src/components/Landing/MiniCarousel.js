@@ -3,10 +3,10 @@ import classes from "./MiniCarousel.module.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const images = [
-  { id: "1", ImageName: "mini1.jpg", tag: "Mini Carousel Images" },
-  { id: "2", ImageName: "mini2.jpg", tag: "Mini Carousel Images" },
-  { id: "3", ImageName: "mini3.jpg", tag: "Mini Carousel Images" },
-  { id: "4", ImageName: "mini4.jpg", tag: "Mini Carousel Images" },
+  { id: "1", ImageName: "int_2.jpeg", tag: "Mini Carousel Images" },
+  { id: "2", ImageName: "ext_4.jpeg", tag: "Mini Carousel Images" },
+  { id: "3", ImageName: "oth_1.jpeg", tag: "Mini Carousel Images" },
+  { id: "4", ImageName: "kit_4.jpeg", tag: "Mini Carousel Images" },
 ];
 
 const imagePosition = {
