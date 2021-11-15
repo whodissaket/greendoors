@@ -19,10 +19,10 @@ export const Categories = styled.button`
 
 export const GalleryContainer = styled.div`
   padding-top: 4fr;
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 10px;
 
   @media screen and (max-width: 1024px) {
@@ -46,8 +46,9 @@ export const ImageCard = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 65%;
+  width: 100%;
   height: auto;
+  object-fit: inherit;
 
   @media screen and (max-width: 820px) {
     width: 65%;
