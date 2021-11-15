@@ -1,45 +1,89 @@
-/*eslint-disable */
-import classes from "./Navbar.module.css";
+import React, { useState } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import Dropdown from "./Dropdown";
 
-function updatemenu() {
-  if (document.getElementById('responsive-menu').checked == true) {
-    document.getElementById('menu').style.borderBottomRightRadius = '0';
-    document.getElementById('menu').style.borderBottomLeftRadius = '0';
-  } else {
-    document.getElementById('menu').style.borderRadius = '0px';
-  }
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  return (
+    <>
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          Greendoors
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li
+            className="nav-item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to="/services"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Services <i className="fas fa-caret-down" />
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
+          <li className="nav-item">
+            <Link to="/gallery" className="nav-links" onClick={closeMobileMenu}>
+              Gallery
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact-us"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/sign-up"
+              className="nav-links-mobile"
+              onClick={closeMobileMenu}
+            >
+              Sign Up
+            </Link>
+          </li>
+        </ul>
+        <Button />
+      </nav>
+    </>
+  );
 }
 
-
-const Navbar = () => {
-  return (
-    <nav className={classes.menu}>
-      <ul className={classes.leftNav}>
-        {/* <li><a href="#"><img className={classes["logo-image"]} src="https://aapkapainter.com/assets/newdesign/images/logo/logo.png" alt="logo" /></a></li> */}
-        <li><a href="#">Home</a></li>
-        <li><a className={classes["dropdown-arrows"]} href="#">Services <span className={classes.arrow}>&#8595;</span></a>
-          <ul className={classes["sub-menus"]}>
-            <li><a href="#">Price Quote</a></li>
-            <li><a href="#">Interior Paintaing</a></li>
-            <li><a href="#">Exterior Paintaing</a></li>
-            <li><a href="#">Waterproofing</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Gallery</a></li>
-        <li><a className={classes["dropdown-arrows"]} href="#">Products <span className={classes.arrow}>&#8595;</span></a>
-          <ul className={classes["sub-menus"]}>
-            <li><a href="#">Textures</a></li>
-            <li><a href="#">Paints</a></li>
-            <li><a href="#">Waterproofing</a></li>
-            <li><a href="#">Shade Cards</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-      <ul className={classes.rightNav}>
-        <li><a className={classes.mobile} href="tel:+919867456321"><span className={classes["icon"]}>+919867456321</span></a></li>
-      </ul>
-    </nav>
-  );
-};
 export default Navbar;
